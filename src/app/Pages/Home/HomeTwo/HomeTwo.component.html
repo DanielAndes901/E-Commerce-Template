@@ -1,0 +1,23 @@
+
+
+  <ECTEMPLATE-HomePageTwoSlider [isRTL]="embryoService.isDirectionRtl"></ECTEMPLATE-HomePageTwoSlider>
+  
+  <ECTEMPLATE-CtaGroup></ECTEMPLATE-CtaGroup>
+
+  <ECTEMPLATE-LighteningDeals *ngIf="lighteningDealsProducts" [lighteningDeals]="lighteningDealsProducts"></ECTEMPLATE-LighteningDeals>
+
+  <ECTEMPLATE-TopProducts *ngIf="topProducts" [products]="topProducts" [currency]="embryoService?.currency" (addToCart)="addToCart($event)"></ECTEMPLATE-TopProducts>
+   <div class="section-gap pt-0">
+   <div class="container">
+      <div fxLayoutAlign="space-between" class="w-100">
+         <div class="block-title mb-4">
+         <h3>Top Brands</h3>
+         </div>
+      </div>
+      <ECTEMPLATE-BrandsLogo [isRTL]="embryoService.isDirectionRtl"></ECTEMPLATE-BrandsLogo>
+   </div>
+   </div>
+   <div class="section-gap pb-0">   
+  <ECTEMPLATE-SubscribeTwo></ECTEMPLATE-SubscribeTwo>
+   
+</div>
